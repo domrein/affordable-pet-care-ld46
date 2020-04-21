@@ -14,7 +14,7 @@ export default class PetCare extends Game {
   constructor() {
     super(160, 120, TitleScene, Canvas2dRenderer, "canvas");
 
-    random.setSeed(1);
+    random.setSeed(Date.now());
 
     this.score = 0;
 

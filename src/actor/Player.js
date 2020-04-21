@@ -92,7 +92,6 @@ export default class Player extends Actor {
     if (key === "x") {
       // if we're holding a pet
       if (this.pet) {
-        console.log(`dropped ${this.pet.name}`);
         // see if we are near a customer
         // give to customer if near
         // otherwise, drop pet
@@ -116,7 +115,6 @@ export default class Player extends Actor {
         if (targetPet) {
           this.pet = /** @type {Pet} */(targetPet);
           this.pet.pickUp();
-          console.log(`picked up ${this.pet.name}`);
         }
       }
     }
