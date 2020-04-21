@@ -130,4 +130,12 @@ export default class PetCare extends Game {
       textPeriod: {frames: ["text_.1"], frameRate: 10, looping: true},
     };
   }
+
+  init() {
+    super.init();
+    // this.audioMixer.play("titleMusic");
+    // setInterval(() => {
+    //   this.audioMixer.play("titleMusic");
+    // }, 18000);
+  }
 }
